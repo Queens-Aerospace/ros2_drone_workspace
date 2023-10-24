@@ -9,6 +9,7 @@ setup.py
 ../build/my_drone_ctrl/my_drone_ctrl.egg-info/top_level.txt
 ../build/my_drone_ctrl/my_drone_ctrl.egg-info/zip-safe
 my_drone_ctrl/__init__.py
+my_drone_ctrl/my_first_node.py
 resource/my_drone_ctrl
 test/test_copyright.py
 test/test_flake8.py

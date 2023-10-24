@@ -1,5 +1,7 @@
 /workspaces/dev_env/src/drone_workspace/install/my_drone_ctrl/lib/python3.10/site-packages/my_drone_ctrl/__init__.py
+/workspaces/dev_env/src/drone_workspace/install/my_drone_ctrl/lib/python3.10/site-packages/my_drone_ctrl/my_first_node.py
 /workspaces/dev_env/src/drone_workspace/install/my_drone_ctrl/lib/python3.10/site-packages/my_drone_ctrl/__pycache__/__init__.cpython-310.pyc
+/workspaces/dev_env/src/drone_workspace/install/my_drone_ctrl/lib/python3.10/site-packages/my_drone_ctrl/__pycache__/my_first_node.cpython-310.pyc
 /workspaces/dev_env/src/drone_workspace/install/my_drone_ctrl/share/ament_index/resource_index/packages/my_drone_ctrl
 /workspaces/dev_env/src/drone_workspace/install/my_drone_ctrl/share/my_drone_ctrl/package.xml
 /workspaces/dev_env/src/drone_workspace/install/my_drone_ctrl/lib/python3.10/site-packages/my_drone_ctrl-0.0.0-py3.10.egg-info/zip-safe

@@ -1,0 +1,14 @@
+[0.870s] Invoking command in '/workspaces/dev_env/src/drone_workspace/my_drone_ctrl': PYTHONPATH=/workspaces/dev_env/src/drone_workspace/build/my_drone_ctrl/prefix_override:/workspaces/dev_env/src/drone_workspace/install/my_drone_ctrl/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/my_drone_ctrl build --build-base /workspaces/dev_env/src/drone_workspace/build/my_drone_ctrl/build install --record /workspaces/dev_env/src/drone_workspace/build/my_drone_ctrl/install.log --single-version-externally-managed
+[1.080s] running egg_info
+[1.083s] writing manifest file '../build/my_drone_ctrl/my_drone_ctrl.egg-info/SOURCES.txt'
+[1.083s] running build
+[1.084s] running build_py
+[1.084s] running install
+[1.084s] running install_lib
+[1.085s] running install_data
+[1.085s] running install_egg_info
+[1.087s] removing '/workspaces/dev_env/src/drone_workspace/install/my_drone_ctrl/lib/python3.10/site-packages/my_drone_ctrl-0.0.0-py3.10.egg-info' (and everything under it)
+[1.087s] Copying ../build/my_drone_ctrl/my_drone_ctrl.egg-info to /workspaces/dev_env/src/drone_workspace/install/my_drone_ctrl/lib/python3.10/site-packages/my_drone_ctrl-0.0.0-py3.10.egg-info
+[1.088s] running install_scripts
+[1.104s] writing list of installed files to '/workspaces/dev_env/src/drone_workspace/build/my_drone_ctrl/install.log'
+[1.128s] Invoked command in '/workspaces/dev_env/src/drone_workspace/my_drone_ctrl' returned '0': PYTHONPATH=/workspaces/dev_env/src/drone_workspace/build/my_drone_ctrl/prefix_override:/workspaces/dev_env/src/drone_workspace/install/my_drone_ctrl/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/my_drone_ctrl build --build-base /workspaces/dev_env/src/drone_workspace/build/my_drone_ctrl/build install --record /workspaces/dev_env/src/drone_workspace/build/my_drone_ctrl/install.log --single-version-externally-managed

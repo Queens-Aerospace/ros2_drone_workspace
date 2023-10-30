@@ -1,0 +1,4 @@
+Invoking command in '/workspaces/dev_env/src/drone_workspace/build/px4_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /workspaces/dev_env/src/drone_workspace/build/px4_msgs -- -j20 -l20
+Invoked command in '/workspaces/dev_env/src/drone_workspace/build/px4_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /workspaces/dev_env/src/drone_workspace/build/px4_msgs -- -j20 -l20
+Invoking command in '/workspaces/dev_env/src/drone_workspace/build/px4_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /workspaces/dev_env/src/drone_workspace/build/px4_msgs
+Invoked command in '/workspaces/dev_env/src/drone_workspace/build/px4_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /workspaces/dev_env/src/drone_workspace/build/px4_msgs

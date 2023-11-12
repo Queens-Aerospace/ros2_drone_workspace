@@ -1,0 +1,39 @@
+[0.640s] Invoking command in '/workspaces/dev_env/src/drone_workspace/my_drone_ctrl': PYTHONPATH=/workspaces/dev_env/src/drone_workspace/build/my_drone_ctrl/prefix_override:/workspaces/dev_env/src/drone_workspace/install/my_drone_ctrl/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/my_drone_ctrl build --build-base /workspaces/dev_env/src/drone_workspace/build/my_drone_ctrl/build install --record /workspaces/dev_env/src/drone_workspace/build/my_drone_ctrl/install.log --single-version-externally-managed
+[0.764s] running egg_info
+[0.771s] writing ../build/my_drone_ctrl/my_drone_ctrl.egg-info/PKG-INFO
+[0.771s] writing dependency_links to ../build/my_drone_ctrl/my_drone_ctrl.egg-info/dependency_links.txt
+[0.772s] deleting ../build/my_drone_ctrl/my_drone_ctrl.egg-info/entry_points.txt
+[0.772s] writing requirements to ../build/my_drone_ctrl/my_drone_ctrl.egg-info/requires.txt
+[0.772s] writing top-level names to ../build/my_drone_ctrl/my_drone_ctrl.egg-info/top_level.txt
+[0.787s] reading manifest file '../build/my_drone_ctrl/my_drone_ctrl.egg-info/SOURCES.txt'
+[0.788s] writing manifest file '../build/my_drone_ctrl/my_drone_ctrl.egg-info/SOURCES.txt'
+[0.788s] running build
+[0.788s] running build_py
+[0.788s] copying my_drone_ctrl/GPSData.py -> /workspaces/dev_env/src/drone_workspace/build/my_drone_ctrl/build/lib/my_drone_ctrl
+[0.788s] copying my_drone_ctrl/my_first_node.py -> /workspaces/dev_env/src/drone_workspace/build/my_drone_ctrl/build/lib/my_drone_ctrl
+[0.788s] running install
+[0.789s] /usr/local/lib/python3.10/dist-packages/setuptools/_distutils/cmd.py:66: SetuptoolsDeprecationWarning: setup.py install is deprecated.
+[0.789s] !!
+[0.789s] 
+[0.789s]         ********************************************************************************
+[0.789s]         Please avoid running ``setup.py`` directly.
+[0.789s]         Instead, use pypa/build, pypa/installer or other
+[0.789s]         standards-based tools.
+[0.789s] 
+[0.789s]         See https://blog.ganssle.io/articles/2021/10/setup-py-deprecated.html for details.
+[0.789s]         ********************************************************************************
+[0.789s] 
+[0.789s] !!
+[0.789s]   self.initialize_options()
+[0.793s] running install_lib
+[0.800s] copying /workspaces/dev_env/src/drone_workspace/build/my_drone_ctrl/build/lib/my_drone_ctrl/GPSData.py -> /workspaces/dev_env/src/drone_workspace/install/my_drone_ctrl/lib/python3.10/site-packages/my_drone_ctrl
+[0.801s] copying /workspaces/dev_env/src/drone_workspace/build/my_drone_ctrl/build/lib/my_drone_ctrl/my_first_node.py -> /workspaces/dev_env/src/drone_workspace/install/my_drone_ctrl/lib/python3.10/site-packages/my_drone_ctrl
+[0.802s] byte-compiling /workspaces/dev_env/src/drone_workspace/install/my_drone_ctrl/lib/python3.10/site-packages/my_drone_ctrl/GPSData.py to GPSData.cpython-310.pyc
+[0.802s] byte-compiling /workspaces/dev_env/src/drone_workspace/install/my_drone_ctrl/lib/python3.10/site-packages/my_drone_ctrl/my_first_node.py to my_first_node.cpython-310.pyc
+[0.802s] running install_data
+[0.810s] running install_egg_info
+[0.818s] removing '/workspaces/dev_env/src/drone_workspace/install/my_drone_ctrl/lib/python3.10/site-packages/my_drone_ctrl-0.0.0-py3.10.egg-info' (and everything under it)
+[0.819s] Copying ../build/my_drone_ctrl/my_drone_ctrl.egg-info to /workspaces/dev_env/src/drone_workspace/install/my_drone_ctrl/lib/python3.10/site-packages/my_drone_ctrl-0.0.0-py3.10.egg-info
+[0.819s] running install_scripts
+[0.891s] writing list of installed files to '/workspaces/dev_env/src/drone_workspace/build/my_drone_ctrl/install.log'
+[0.907s] Invoked command in '/workspaces/dev_env/src/drone_workspace/my_drone_ctrl' returned '0': PYTHONPATH=/workspaces/dev_env/src/drone_workspace/build/my_drone_ctrl/prefix_override:/workspaces/dev_env/src/drone_workspace/install/my_drone_ctrl/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/my_drone_ctrl build --build-base /workspaces/dev_env/src/drone_workspace/build/my_drone_ctrl/build install --record /workspaces/dev_env/src/drone_workspace/build/my_drone_ctrl/install.log --single-version-externally-managed

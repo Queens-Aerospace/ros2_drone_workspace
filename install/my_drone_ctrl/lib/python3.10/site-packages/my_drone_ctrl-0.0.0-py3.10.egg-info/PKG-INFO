@@ -2,11 +2,7 @@ Metadata-Version: 2.1
 Name: my-drone-ctrl
 Version: 0.0.0
 Summary: TODO: Package description
-Home-page: UNKNOWN
 Maintainer: ros
 Maintainer-email: conor.spalvieri@queensu.ca
 License: TODO: License declaration
-Platform: UNKNOWN
-
-UNKNOWN
-
+Requires-Dist: setuptools

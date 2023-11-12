@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
+import math
 import rclpy
 from rclpy.node import Node
 from rclpy.qos import QoSProfile, ReliabilityPolicy, HistoryPolicy, DurabilityPolicy
 from px4_msgs.msg import OffboardControlMode, TrajectorySetpoint, VehicleCommand, VehicleLocalPosition, VehicleStatus
-
 
 class OffboardControl(Node):
     """Node for controlling a vehicle in offboard mode."""
@@ -38,7 +38,7 @@ class OffboardControl(Node):
         self.vehicle_local_position = VehicleLocalPosition()
         self.vehicle_status = VehicleStatus()
         self.takeoff_height = -5.0
-
+        self.circleStartTime = 0
         # Create a timer to publish control commands
         self.timer = self.create_timer(0.1, self.timer_callback)
 
@@ -112,6 +112,12 @@ class OffboardControl(Node):
         msg.timestamp = int(self.get_clock().now().nanoseconds / 1000)
         self.vehicle_command_publisher.publish(msg)
 
+    def circleX(self):
+        return 5.0 * math.cos(int(self.get_clock().now().nanoseconds / 1000000000) - self.circleStartTime)
+    
+    def circleY(self):
+        return 5.0 * math.sin(int(self.get_clock().now().nanoseconds / 1000000000) - self.circleStartTime)
+
     def timer_callback(self) -> None:
         """Callback function for the timer."""
         self.publish_offboard_control_heartbeat_signal()
@@ -123,16 +129,17 @@ class OffboardControl(Node):
         if self.vehicle_local_position.z > self.takeoff_height and self.vehicle_status.nav_state == VehicleStatus.NAVIGATION_STATE_OFFBOARD:
             self.publish_position_setpoint(0.0, 0.0, self.takeoff_height)
 
-        elif self.vehicle_local_position.x > -5.0 and self.vehicle_status.nav_state == VehicleStatus.NAVIGATION_STATE_OFFBOARD:
-            self.publish_position_setpoint(-5.0, 0.0, self.vehicle_local_position.z)
+        elif self.vehicle_local_position.z <= self.takeoff_height and self.vehicle_status.nav_state == VehicleStatus.NAVIGATION_STATE_OFFBOARD:
+            if self.circleStartTime == 0:
+                self.circleStartTime = int(self.get_clock().now().nanoseconds / 1000000000)
+            self.publish_position_setpoint(self.circleX(), self.circleY(), self.vehicle_local_position.z)
 
-        elif self.vehicle_local_position.z <= self.takeoff_height and self.vehicle_local_position.x <= -5.0:
+        elif self.vehicle_local_position.z <= self.takeoff_height and self.vehicle_status.nav_state == VehicleStatus.NAVIGATION_STATE_OFFBOARD:
             self.land()
             exit(0)
 
         if self.offboard_setpoint_counter < 11:
             self.offboard_setpoint_counter += 1
-
 
 def main(args=None) -> None:
     print('Starting offboard control node...')

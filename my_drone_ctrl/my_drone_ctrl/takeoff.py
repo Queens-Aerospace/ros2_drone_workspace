@@ -2,7 +2,7 @@
 import rclpy
 from rclpy.node import Node
 from rclpy.qos import QoSProfile, ReliabilityPolicy, HistoryPolicy, DurabilityPolicy
-from px4_msgs.msg import OffboardControlMode, TrajectorySetpoint, VehicleCommand, VehicleLocalPosition, VehicleStatus
+from px4_msgs.msg import OffboardControlMode, TrajectorySetpoint, VehicleCommand, VehicleLocalPosition, VehicleStatus, SensorGps
 
 
 class OffboardControl(Node):
@@ -28,9 +28,12 @@ class OffboardControl(Node):
                         VehicleLocalPosition, '/fmu/out/vehicle_local_position', self.vehicle_local_position_callback, qos_profile)
                 self.vehicle_status_subscriber = self.create_subscription(
                         VehicleStatus, '/fmu/out/vehicle_status', self.vehicle_status_callback, qos_profile)
+                self.vehicle_status_subscriber = self.create_subscription(
+                        SensorGps, '/fmu/out/vehicle_gps_position', self.vehicle_Sensor_gps_callback, qos_profile)
                 
                 self.offboard_setpoint_counter = 0
                 self.vehicle_local_position = VehicleLocalPosition()
+                self.vehicle_gps_position = SensorGps()
                 self.vehicle_status = VehicleStatus()
                 self.takeoff_height = -5.0
 
@@ -40,6 +43,10 @@ class OffboardControl(Node):
         def vehicle_local_position_callback(self, vehicle_local_position):
                 """Callback function for vehicle_local_position topic subscriber."""
                 self.vehicle_local_position = vehicle_local_position
+
+        def vehicle_Sensor_gps_callback(self, vehicle_gps_position):
+                """Callback function for vehicle_gps_position topic subscriber."""
+                self.vehicle_gps_position = vehicle_gps_position
 
         def vehicle_status_callback(self, vehicle_status):
                 """Callback function for vehicle_status topic subscriber."""
@@ -115,7 +122,7 @@ class OffboardControl(Node):
                         self.offboard_setpoint_counter += 1
 
                 print(self.vehicle_local_position.x, self.vehicle_local_position.y, self.vehicle_local_position.z)
-
+                print(self.vehicle_gps_position.latitude_deg, self.vehicle_gps_position.longitude_deg)
 
 def main(args=None) -> None:
     print('Starting offboard control node...')

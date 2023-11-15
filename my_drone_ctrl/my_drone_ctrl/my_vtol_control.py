@@ -34,7 +34,7 @@ class OffboardControl(Node):
                 self.offboard_setpoint_counter = 0
                 self.vehicle_local_position = VehicleLocalPosition()
                 self.vehicle_status = VehicleStatus()
-                self.takeoff_height = -5.0
+                self.takeoff_height = -20.0
 
                 #Create a timer to publish control commands
                 self.timer = self.create_timer(0.1, self.timer_callback)
@@ -112,6 +112,29 @@ class OffboardControl(Node):
                 msg.timestamp = int(self.get_clock().now().nanoseconds / 1000)
                 self.vehicle_command_publisher.publish(msg)
 
+        def publish_velocity_setpoint(self, vx, vy, vz, afx, afy, afz):
+                """Publish a velocity setpoint."""
+                msg = TrajectorySetpoint()
+                msg.velocity = [vx, vy, vz]
+                msg.acceleration = [afx, afy, afz]
+                msg.timestamp = int(self.get_clock().now().nanoseconds / 1000)
+                self.trajectory_setpoint_publisher.publish(msg)
+                self.get_logger().info(f"Publishing velocity setpoint: [{vx}, {vy}, {vz}]")
+
+
+        def publish_vehicle_command_vtol_transition(self, transition_type) -> None:
+                VTOL_TRANSITION_COMMAND = VehicleCommand.VEHICLE_CMD_DO_VTOL_TRANSITION
+
+                self.publish_vehicle_command(command = VTOL_TRANSITION_COMMAND, 
+                                             param1 = float(transition_type),
+                                             target_system = 1, 
+                                             target_component = 1,
+                                             source_system = 1,
+                                             source_component = 1,
+                                             from_external = True)
+                
+                self.get_logger().info(f"VTOL transition command sent. Transition Type: {transition_type}")
+
         def timer_callback(self) -> None:
                 """Callback function for the timer."""
                 self.publish_offboard_control_heartbeat_signal()
@@ -121,16 +144,14 @@ class OffboardControl(Node):
                     self.arm()
 
                 if self.vehicle_local_position.z > self.takeoff_height and self.vehicle_status.nav_state == VehicleStatus.NAVIGATION_STATE_OFFBOARD:
+                    self.publish_vehicle_command_vtol_transition(2)
                     self.publish_position_setpoint(0.0, 0.0, self.takeoff_height)
-                    if self.vehicle_local_position.z < self.takeoff_height + 0.2 and not hasattr(self, 'moved_to_location'):
+                    if self.vehicle_local_position.z < self.takeoff_height + 0.2:
+                           self.publish_velocity_setpoint(1.0, 0.0, 0.0, 0.0, 0.0, 0.0)
+                           self.publish_vehicle_command_vtol_transition(1)
                            self.publish_position_setpoint(5.0, 5.0, self.takeoff_height)
-                           self.moved_to_location = True
-                    if not hasattr(self, 'return_to_origin') and self.vehicle_local_position.z < self.takeoff_height + 0.1 and self.vehicle_local_position.x > 4.9 and self.vehicle_local_position.y > 4.9:
-                           self.publish_position_setpoint(0.0, 0.0, self.takeoff_height)
-                           self.return_to_origin = True
-                    if hasattr(self, 'return_to_origin') and self.vehicle_local_position.x < 0.1 and self.vehicle_local_position.y < 0.1:
-                           self.land()
-                           exit(0)
+                    if self.vehicle_local_position.x > 4.9 and self.vehicle_local_position.y > 4.9:
+                           self.publish_position_setpoint(-5.0, -5.0, self.takeoff_height)
 
                 if self.offboard_setpoint_counter < 11:
                     self.offboard_setpoint_counter += 1

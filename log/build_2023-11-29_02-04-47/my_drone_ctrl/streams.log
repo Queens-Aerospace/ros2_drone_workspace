@@ -1,0 +1,71 @@
+[1.359s] Invoking command in '/workspaces/dev_env/src/drone_workspace/build/my_drone_ctrl': PYTHONPATH=/workspaces/dev_env/src/drone_workspace/build/my_drone_ctrl/prefix_override:/workspaces/dev_env/src/drone_workspace/install/my_drone_ctrl/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --uninstall --editable --build-directory /workspaces/dev_env/src/drone_workspace/build/my_drone_ctrl/build
+[1.733s] running develop
+[1.733s] /usr/local/lib/python3.10/dist-packages/setuptools/command/develop.py:40: EasyInstallDeprecationWarning: easy_install command is deprecated.
+[1.733s] !!
+[1.733s] 
+[1.733s]         ********************************************************************************
+[1.733s]         Please avoid running ``setup.py`` and ``easy_install``.
+[1.733s]         Instead, use pypa/build, pypa/installer or other
+[1.734s]         standards-based tools.
+[1.734s] 
+[1.734s]         See https://github.com/pypa/setuptools/issues/917 for details.
+[1.734s]         ********************************************************************************
+[1.734s] 
+[1.734s] !!
+[1.734s]   easy_install.initialize_options(self)
+[1.769s] /usr/local/lib/python3.10/dist-packages/setuptools/_distutils/cmd.py:66: SetuptoolsDeprecationWarning: setup.py install is deprecated.
+[1.769s] !!
+[1.769s] 
+[1.769s]         ********************************************************************************
+[1.769s]         Please avoid running ``setup.py`` directly.
+[1.769s]         Instead, use pypa/build, pypa/installer or other
+[1.769s]         standards-based tools.
+[1.769s] 
+[1.769s]         See https://blog.ganssle.io/articles/2021/10/setup-py-deprecated.html for details.
+[1.769s]         ********************************************************************************
+[1.769s] 
+[1.769s] !!
+[1.769s]   self.initialize_options()
+[1.943s] Removing /workspaces/dev_env/src/drone_workspace/install/my_drone_ctrl/lib/python3.10/site-packages/my-drone-ctrl.egg-link (link to .)
+[1.979s] Invoked command in '/workspaces/dev_env/src/drone_workspace/build/my_drone_ctrl' returned '0': PYTHONPATH=/workspaces/dev_env/src/drone_workspace/build/my_drone_ctrl/prefix_override:/workspaces/dev_env/src/drone_workspace/install/my_drone_ctrl/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --uninstall --editable --build-directory /workspaces/dev_env/src/drone_workspace/build/my_drone_ctrl/build
+[1.982s] Invoking command in '/workspaces/dev_env/src/drone_workspace/my_drone_ctrl': PYTHONPATH=/workspaces/dev_env/src/drone_workspace/build/my_drone_ctrl/prefix_override:/workspaces/dev_env/src/drone_workspace/install/my_drone_ctrl/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/my_drone_ctrl build --build-base /workspaces/dev_env/src/drone_workspace/build/my_drone_ctrl/build install --record /workspaces/dev_env/src/drone_workspace/build/my_drone_ctrl/install.log --single-version-externally-managed
+[2.283s] running egg_info
+[2.300s] writing ../build/my_drone_ctrl/my_drone_ctrl.egg-info/PKG-INFO
+[2.301s] writing dependency_links to ../build/my_drone_ctrl/my_drone_ctrl.egg-info/dependency_links.txt
+[2.302s] writing entry points to ../build/my_drone_ctrl/my_drone_ctrl.egg-info/entry_points.txt
+[2.302s] writing requirements to ../build/my_drone_ctrl/my_drone_ctrl.egg-info/requires.txt
+[2.302s] writing top-level names to ../build/my_drone_ctrl/my_drone_ctrl.egg-info/top_level.txt
+[2.334s] reading manifest file '../build/my_drone_ctrl/my_drone_ctrl.egg-info/SOURCES.txt'
+[2.335s] writing manifest file '../build/my_drone_ctrl/my_drone_ctrl.egg-info/SOURCES.txt'
+[2.336s] running build
+[2.336s] running build_py
+[2.337s] running install
+[2.337s] /usr/local/lib/python3.10/dist-packages/setuptools/_distutils/cmd.py:66: SetuptoolsDeprecationWarning: setup.py install is deprecated.
+[2.337s] !!
+[2.337s] 
+[2.337s]         ********************************************************************************
+[2.337s]         Please avoid running ``setup.py`` directly.
+[2.337s]         Instead, use pypa/build, pypa/installer or other
+[2.337s]         standards-based tools.
+[2.337s] 
+[2.337s]         See https://blog.ganssle.io/articles/2021/10/setup-py-deprecated.html for details.
+[2.337s]         ********************************************************************************
+[2.338s] 
+[2.338s] !!
+[2.338s]   self.initialize_options()
+[2.347s] running install_lib
+[2.361s] creating /workspaces/dev_env/src/drone_workspace/install/my_drone_ctrl/lib/python3.10/site-packages/my_drone_ctrl
+[2.361s] copying /workspaces/dev_env/src/drone_workspace/build/my_drone_ctrl/build/lib/my_drone_ctrl/GPSData.py -> /workspaces/dev_env/src/drone_workspace/install/my_drone_ctrl/lib/python3.10/site-packages/my_drone_ctrl
+[2.362s] copying /workspaces/dev_env/src/drone_workspace/build/my_drone_ctrl/build/lib/my_drone_ctrl/my_first_node.py -> /workspaces/dev_env/src/drone_workspace/install/my_drone_ctrl/lib/python3.10/site-packages/my_drone_ctrl
+[2.362s] copying /workspaces/dev_env/src/drone_workspace/build/my_drone_ctrl/build/lib/my_drone_ctrl/__init__.py -> /workspaces/dev_env/src/drone_workspace/install/my_drone_ctrl/lib/python3.10/site-packages/my_drone_ctrl
+[2.364s] byte-compiling /workspaces/dev_env/src/drone_workspace/install/my_drone_ctrl/lib/python3.10/site-packages/my_drone_ctrl/GPSData.py to GPSData.cpython-310.pyc
+[2.368s] byte-compiling /workspaces/dev_env/src/drone_workspace/install/my_drone_ctrl/lib/python3.10/site-packages/my_drone_ctrl/my_first_node.py to my_first_node.cpython-310.pyc
+[2.368s] byte-compiling /workspaces/dev_env/src/drone_workspace/install/my_drone_ctrl/lib/python3.10/site-packages/my_drone_ctrl/__init__.py to __init__.cpython-310.pyc
+[2.368s] running install_data
+[2.397s] creating /workspaces/dev_env/src/drone_workspace/install/my_drone_ctrl/share/my_drone_ctrl/launch
+[2.398s] running install_egg_info
+[2.414s] Copying ../build/my_drone_ctrl/my_drone_ctrl.egg-info to /workspaces/dev_env/src/drone_workspace/install/my_drone_ctrl/lib/python3.10/site-packages/my_drone_ctrl-0.0.0-py3.10.egg-info
+[2.416s] running install_scripts
+[2.587s] Installing GPSNode script to /workspaces/dev_env/src/drone_workspace/install/my_drone_ctrl/lib/my_drone_ctrl
+[2.588s] writing list of installed files to '/workspaces/dev_env/src/drone_workspace/build/my_drone_ctrl/install.log'
+[2.633s] Invoked command in '/workspaces/dev_env/src/drone_workspace/my_drone_ctrl' returned '0': PYTHONPATH=/workspaces/dev_env/src/drone_workspace/build/my_drone_ctrl/prefix_override:/workspaces/dev_env/src/drone_workspace/install/my_drone_ctrl/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/my_drone_ctrl build --build-base /workspaces/dev_env/src/drone_workspace/build/my_drone_ctrl/build install --record /workspaces/dev_env/src/drone_workspace/build/my_drone_ctrl/install.log --single-version-externally-managed

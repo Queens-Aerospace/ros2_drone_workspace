@@ -184,7 +184,7 @@ class OffboardControl(Node):
 
         self.printGPS()
 
-        if self.offboard_setpoint_counter < 11:
+        if self.offboard_setpoint_counter < 31:
             self.offboard_setpoint_counter += 1
 
 def main(args=None) -> None:

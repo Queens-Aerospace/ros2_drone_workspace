@@ -1,0 +1,2 @@
+[console_scripts]
+GPSNode = my_drone_ctrl.GPSData:main

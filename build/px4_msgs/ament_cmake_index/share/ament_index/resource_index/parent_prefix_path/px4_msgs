@@ -1,1 +1,1 @@
-/home/ros/ws_sensor_combined/install/px4_ros_com:/home/ros/ws_sensor_combined/install/px4_msgs:/opt/ros/humble
+/workspaces/dev_env/src/drone_workspace/install/px4_msgs:/workspaces/dev_env/src/drone_workspace/install/my_drone_ctrl:/workspaces/dev_env/src/drone_workspace/my_drone_ctrl/my_drone_ctrl/install/my_drone_bringup:/home/ros/ws_sensor_combined/install/px4_ros_com:/home/ros/ws_sensor_combined/install/px4_msgs:/opt/ros/humble

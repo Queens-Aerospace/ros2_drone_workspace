@@ -1,0 +1,19 @@
+running egg_info
+writing ../build/my_drone_ctrl/my_drone_ctrl.egg-info/PKG-INFO
+writing dependency_links to ../build/my_drone_ctrl/my_drone_ctrl.egg-info/dependency_links.txt
+writing entry points to ../build/my_drone_ctrl/my_drone_ctrl.egg-info/entry_points.txt
+writing requirements to ../build/my_drone_ctrl/my_drone_ctrl.egg-info/requires.txt
+writing top-level names to ../build/my_drone_ctrl/my_drone_ctrl.egg-info/top_level.txt
+reading manifest file '../build/my_drone_ctrl/my_drone_ctrl.egg-info/SOURCES.txt'
+writing manifest file '../build/my_drone_ctrl/my_drone_ctrl.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+running install_data
+running install_egg_info
+removing '/workspaces/dev_env/src/drone_workspace/install/my_drone_ctrl/lib/python3.10/site-packages/my_drone_ctrl-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../build/my_drone_ctrl/my_drone_ctrl.egg-info to /workspaces/dev_env/src/drone_workspace/install/my_drone_ctrl/lib/python3.10/site-packages/my_drone_ctrl-0.0.0-py3.10.egg-info
+running install_scripts
+Installing GPSNode script to /workspaces/dev_env/src/drone_workspace/install/my_drone_ctrl/lib/my_drone_ctrl
+writing list of installed files to '/workspaces/dev_env/src/drone_workspace/build/my_drone_ctrl/install.log'

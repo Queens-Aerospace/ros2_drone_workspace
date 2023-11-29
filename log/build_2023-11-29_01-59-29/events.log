@@ -1,0 +1,202 @@
+[0.000000] (-) TimerEvent: {}
+[0.000807] (my_drone_ctrl) JobQueued: {'identifier': 'my_drone_ctrl', 'dependencies': OrderedDict()}
+[0.000894] (px4_msgs) JobQueued: {'identifier': 'px4_msgs', 'dependencies': OrderedDict()}
+[0.000948] (my_drone_ctrl) JobStarted: {'identifier': 'my_drone_ctrl'}
+[0.099736] (-) TimerEvent: {}
+[0.111394] (px4_msgs) JobStarted: {'identifier': 'px4_msgs'}
+[0.199995] (-) TimerEvent: {}
+[0.300419] (-) TimerEvent: {}
+[0.400844] (-) TimerEvent: {}
+[0.502691] (-) TimerEvent: {}
+[0.596950] (px4_msgs) JobProgress: {'identifier': 'px4_msgs', 'progress': 'cmake'}
+[0.598159] (px4_msgs) Command: {'cmd': ['/usr/bin/cmake', '/workspaces/dev_env/src/drone_workspace/px4_msgs', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/workspaces/dev_env/src/drone_workspace/install/px4_msgs'], 'cwd': '/workspaces/dev_env/src/drone_workspace/build/px4_msgs', 'env': OrderedDict([('HOSTNAME', 'docker-desktop'), ('GIT_ASKPASS', '/vscode/vscode-server/bin/linux-x64/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LIBGL_ALWAYS_SOFTWARE', '1'), ('LD_LIBRARY_PATH', '/workspaces/dev_env/src/drone_workspace/install/px4_msgs/lib:/home/ros/ws_sensor_combined/install/px4_ros_com/lib:/home/ros/ws_sensor_combined/install/px4_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/vscode/vscode-server/bin/linux-x64/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/bin/helpers/browser.sh'), ('AMENT_CPPCHECK_ALLOW_SLOW_VERSIONS', '1'), ('HOME', '/home/ros'), ('OLDPWD', '/workspaces/dev_env/src/drone_workspace/my_drone_ctrl/my_drone_ctrl'), ('TERM_PROGRAM_VERSION', '1.84.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-5ba4468a-17db-4f8d-adaa-7830ae3890e7.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/vscode/vscode-server/bin/linux-x64/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/vscode/vscode-server/bin/linux-x64/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/workspaces/dev_env/src/drone_workspace/install:/home/ros/ws_sensor_combined/install:/workspaces/dev_env/src/drone_workspace/my_drone_ctrl/my_drone_ctrl/install:/opt/ros/humble'), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-f06b0979-0939-4b78-8436-67b595599ce6.sock'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/vscode/vscode-server/bin/linux-x64/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-f06b0979-0939-4b78-8436-67b595599ce6.sock","/tmp/.X11-unix/X1","/home/ros/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-6d1ba16160.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-f06b0979-0939-4b78-8436-67b595599ce6.sock'), ('AMENT_PREFIX_PATH', '/workspaces/dev_env/src/drone_workspace/install/px4_msgs:/workspaces/dev_env/src/drone_workspace/install/my_drone_ctrl:/workspaces/dev_env/src/drone_workspace/my_drone_ctrl/my_drone_ctrl/install/my_drone_bringup:/home/ros/ws_sensor_combined/install/px4_ros_com:/home/ros/ws_sensor_combined/install/px4_msgs:/opt/ros/humble'), ('DEBIAN_FRONTEND', ''), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X1'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/workspaces/dev_env/src/drone_workspace/build/px4_msgs'), ('PYTHONPATH', '/workspaces/dev_env/src/drone_workspace/install/px4_msgs/local/lib/python3.10/dist-packages:/workspaces/dev_env/src/drone_workspace/install/my_drone_ctrl/lib/python3.10/site-packages:/home/ros/ws_sensor_combined/install/px4_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/workspaces/dev_env/src/drone_workspace/install/px4_msgs:/workspaces/dev_env/src/drone_workspace/my_drone_ctrl/my_drone_ctrl/install/my_drone_bringup:/home/ros/ws_sensor_combined/install/px4_ros_com:/home/ros/ws_sensor_combined/install/px4_msgs:/workspaces/dev_env/src/drone_workspace/install/my_drone_ctrl:/opt/ros/humble')]), 'shell': False}
+[0.608852] (-) TimerEvent: {}
+[0.619777] (px4_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.709014] (-) TimerEvent: {}
+[0.809427] (-) TimerEvent: {}
+[0.822679] (px4_msgs) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.842490] (px4_msgs) StdoutLine: {'line': b'-- Found builtin_interfaces: 1.2.1 (/opt/ros/humble/share/builtin_interfaces/cmake)\n'}
+[0.911056] (-) TimerEvent: {}
+[0.922871] (px4_msgs) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.932066] (px4_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.956677] (px4_msgs) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.990495] (px4_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.011233] (-) TimerEvent: {}
+[1.020777] (px4_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.048033] (px4_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[1.111460] (-) TimerEvent: {}
+[1.211858] (-) TimerEvent: {}
+[1.272444] (my_drone_ctrl) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'develop', '--editable', '--build-directory', '/workspaces/dev_env/src/drone_workspace/build/my_drone_ctrl/build', '--no-deps', 'install_data'], 'cwd': '/workspaces/dev_env/src/drone_workspace/build/my_drone_ctrl', 'env': {'HOSTNAME': 'docker-desktop', 'GIT_ASKPASS': '/vscode/vscode-server/bin/linux-x64/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LIBGL_ALWAYS_SOFTWARE': '1', 'LD_LIBRARY_PATH': '/workspaces/dev_env/src/drone_workspace/install/px4_msgs/lib:/home/ros/ws_sensor_combined/install/px4_ros_com/lib:/home/ros/ws_sensor_combined/install/px4_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'BROWSER': '/vscode/vscode-server/bin/linux-x64/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/bin/helpers/browser.sh', 'AMENT_CPPCHECK_ALLOW_SLOW_VERSIONS': '1', 'HOME': '/home/ros', 'OLDPWD': '/workspaces/dev_env/src/drone_workspace/my_drone_ctrl/my_drone_ctrl', 'TERM_PROGRAM_VERSION': '1.84.2', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-5ba4468a-17db-4f8d-adaa-7830ae3890e7.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/vscode/vscode-server/bin/linux-x64/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/vscode/vscode-server/bin/linux-x64/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/node', 'COLORTERM': 'truecolor', 'REMOTE_CONTAINERS': 'true', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/workspaces/dev_env/src/drone_workspace/install:/home/ros/ws_sensor_combined/install:/workspaces/dev_env/src/drone_workspace/my_drone_ctrl/my_drone_ctrl/install:/opt/ros/humble', 'ROS_DISTRO': 'humble', 'REMOTE_CONTAINERS_IPC': '/tmp/vscode-remote-containers-ipc-f06b0979-0939-4b78-8436-67b595599ce6.sock', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/vscode/vscode-server/bin/linux-x64/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'REMOTE_CONTAINERS_SOCKETS': '["/tmp/vscode-ssh-auth-f06b0979-0939-4b78-8436-67b595599ce6.sock","/tmp/.X11-unix/X1","/home/ros/.gnupg/S.gpg-agent"]', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-6d1ba16160.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AUTH_SOCK': '/tmp/vscode-ssh-auth-f06b0979-0939-4b78-8436-67b595599ce6.sock', 'AMENT_PREFIX_PATH': '/workspaces/dev_env/src/drone_workspace/install/px4_msgs:/workspaces/dev_env/src/drone_workspace/install/my_drone_ctrl:/workspaces/dev_env/src/drone_workspace/my_drone_ctrl/my_drone_ctrl/install/my_drone_bringup:/home/ros/ws_sensor_combined/install/px4_ros_com:/home/ros/ws_sensor_combined/install/px4_msgs:/opt/ros/humble', 'DEBIAN_FRONTEND': '', 'REMOTE_CONTAINERS_DISPLAY_SOCK': '/tmp/.X11-unix/X1', 'SHELL': '/bin/bash', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/workspaces/dev_env/src/drone_workspace/build/my_drone_ctrl', 'PYTHONPATH': '/workspaces/dev_env/src/drone_workspace/build/my_drone_ctrl/prefix_override:/workspaces/dev_env/src/drone_workspace/install/my_drone_ctrl/lib/python3.10/site-packages:/workspaces/dev_env/src/drone_workspace/install/px4_msgs/local/lib/python3.10/dist-packages:/workspaces/dev_env/src/drone_workspace/install/my_drone_ctrl/lib/python3.10/site-packages:/home/ros/ws_sensor_combined/install/px4_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/workspaces/dev_env/src/drone_workspace/install/px4_msgs:/workspaces/dev_env/src/drone_workspace/my_drone_ctrl/my_drone_ctrl/install/my_drone_bringup:/home/ros/ws_sensor_combined/install/px4_ros_com:/home/ros/ws_sensor_combined/install/px4_msgs'}, 'shell': False}
+[1.311988] (-) TimerEvent: {}
+[1.412425] (-) TimerEvent: {}
+[1.512922] (-) TimerEvent: {}
+[1.614235] (-) TimerEvent: {}
+[1.671340] (my_drone_ctrl) StdoutLine: {'line': b'running develop\n'}
+[1.672339] (my_drone_ctrl) StderrLine: {'line': b'/usr/local/lib/python3.10/dist-packages/setuptools/command/develop.py:40: EasyInstallDeprecationWarning: easy_install command is deprecated.\n'}
+[1.672568] (my_drone_ctrl) StderrLine: {'line': b'!!\n'}
+[1.672656] (my_drone_ctrl) StderrLine: {'line': b'\n'}
+[1.672722] (my_drone_ctrl) StderrLine: {'line': b'        ********************************************************************************\n'}
+[1.672785] (my_drone_ctrl) StderrLine: {'line': b'        Please avoid running ``setup.py`` and ``easy_install``.\n'}
+[1.672844] (my_drone_ctrl) StderrLine: {'line': b'        Instead, use pypa/build, pypa/installer or other\n'}
+[1.672903] (my_drone_ctrl) StderrLine: {'line': b'        standards-based tools.\n'}
+[1.672960] (my_drone_ctrl) StderrLine: {'line': b'\n'}
+[1.673017] (my_drone_ctrl) StderrLine: {'line': b'        See https://github.com/pypa/setuptools/issues/917 for details.\n'}
+[1.673074] (my_drone_ctrl) StderrLine: {'line': b'        ********************************************************************************\n'}
+[1.673131] (my_drone_ctrl) StderrLine: {'line': b'\n'}
+[1.673186] (my_drone_ctrl) StderrLine: {'line': b'!!\n'}
+[1.673241] (my_drone_ctrl) StderrLine: {'line': b'  easy_install.initialize_options(self)\n'}
+[1.707728] (my_drone_ctrl) StderrLine: {'line': b'/usr/local/lib/python3.10/dist-packages/setuptools/_distutils/cmd.py:66: SetuptoolsDeprecationWarning: setup.py install is deprecated.\n'}
+[1.707965] (my_drone_ctrl) StderrLine: {'line': b'!!\n'}
+[1.708037] (my_drone_ctrl) StderrLine: {'line': b'\n'}
+[1.708098] (my_drone_ctrl) StderrLine: {'line': b'        ********************************************************************************\n'}
+[1.708168] (my_drone_ctrl) StderrLine: {'line': b'        Please avoid running ``setup.py`` directly.\n'}
+[1.708265] (my_drone_ctrl) StderrLine: {'line': b'        Instead, use pypa/build, pypa/installer or other\n'}
+[1.708347] (my_drone_ctrl) StderrLine: {'line': b'        standards-based tools.\n'}
+[1.708410] (my_drone_ctrl) StderrLine: {'line': b'\n'}
+[1.708469] (my_drone_ctrl) StderrLine: {'line': b'        See https://blog.ganssle.io/articles/2021/10/setup-py-deprecated.html for details.\n'}
+[1.708526] (my_drone_ctrl) StderrLine: {'line': b'        ********************************************************************************\n'}
+[1.708582] (my_drone_ctrl) StderrLine: {'line': b'\n'}
+[1.708637] (my_drone_ctrl) StderrLine: {'line': b'!!\n'}
+[1.708693] (my_drone_ctrl) StderrLine: {'line': b'  self.initialize_options()\n'}
+[1.714373] (-) TimerEvent: {}
+[1.814910] (-) TimerEvent: {}
+[1.896107] (my_drone_ctrl) StdoutLine: {'line': b'running egg_info\n'}
+[1.910077] (my_drone_ctrl) StdoutLine: {'line': b'writing my_drone_ctrl.egg-info/PKG-INFO\n'}
+[1.910645] (my_drone_ctrl) StdoutLine: {'line': b'writing dependency_links to my_drone_ctrl.egg-info/dependency_links.txt\n'}
+[1.910991] (my_drone_ctrl) StdoutLine: {'line': b'writing entry points to my_drone_ctrl.egg-info/entry_points.txt\n'}
+[1.911093] (my_drone_ctrl) StdoutLine: {'line': b'writing requirements to my_drone_ctrl.egg-info/requires.txt\n'}
+[1.911264] (my_drone_ctrl) StdoutLine: {'line': b'writing top-level names to my_drone_ctrl.egg-info/top_level.txt\n'}
+[1.915080] (-) TimerEvent: {}
+[1.941720] (my_drone_ctrl) StdoutLine: {'line': b"reading manifest file 'my_drone_ctrl.egg-info/SOURCES.txt'\n"}
+[1.942695] (my_drone_ctrl) StdoutLine: {'line': b"writing manifest file 'my_drone_ctrl.egg-info/SOURCES.txt'\n"}
+[1.960499] (my_drone_ctrl) StdoutLine: {'line': b'running build_ext\n'}
+[1.960915] (my_drone_ctrl) StdoutLine: {'line': b'Creating /workspaces/dev_env/src/drone_workspace/install/my_drone_ctrl/lib/python3.10/site-packages/my-drone-ctrl.egg-link (link to .)\n'}
+[1.962218] (my_drone_ctrl) StdoutLine: {'line': b'Installing GPSNode script to /workspaces/dev_env/src/drone_workspace/install/my_drone_ctrl/lib/my_drone_ctrl\n'}
+[1.963173] (my_drone_ctrl) StdoutLine: {'line': b'\n'}
+[1.963773] (my_drone_ctrl) StdoutLine: {'line': b'Installed /workspaces/dev_env/src/drone_workspace/build/my_drone_ctrl\n'}
+[1.963945] (my_drone_ctrl) StdoutLine: {'line': b'running install_data\n'}
+[2.015598] (-) TimerEvent: {}
+[2.017535] (my_drone_ctrl) CommandEnded: {'returncode': 0}
+[2.092968] (my_drone_ctrl) JobEnded: {'identifier': 'my_drone_ctrl', 'rc': 0}
+[2.115786] (-) TimerEvent: {}
+[2.216185] (-) TimerEvent: {}
+[2.316698] (-) TimerEvent: {}
+[2.417162] (-) TimerEvent: {}
+[2.517561] (-) TimerEvent: {}
+[2.617995] (-) TimerEvent: {}
+[2.718521] (-) TimerEvent: {}
+[2.819180] (-) TimerEvent: {}
+[2.919706] (-) TimerEvent: {}
+[3.020078] (-) TimerEvent: {}
+[3.120557] (-) TimerEvent: {}
+[3.221145] (-) TimerEvent: {}
+[3.321552] (-) TimerEvent: {}
+[3.421953] (-) TimerEvent: {}
+[3.522384] (-) TimerEvent: {}
+[3.622975] (-) TimerEvent: {}
+[3.723414] (-) TimerEvent: {}
+[3.824075] (-) TimerEvent: {}
+[3.924711] (-) TimerEvent: {}
+[3.989599] (px4_msgs) StdoutLine: {'line': b'-- Found ament_cmake_cppcheck: 0.12.8 (/opt/ros/humble/share/ament_cmake_cppcheck/cmake)\n'}
+[3.992774] (px4_msgs) StdoutLine: {'line': b'-- Found ament_cmake_cpplint: 0.12.8 (/opt/ros/humble/share/ament_cmake_cpplint/cmake)\n'}
+[3.996841] (px4_msgs) StdoutLine: {'line': b'-- Found ament_cmake_uncrustify: 0.12.8 (/opt/ros/humble/share/ament_cmake_uncrustify/cmake)\n'}
+[4.000252] (px4_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[4.024926] (-) TimerEvent: {}
+[4.125667] (-) TimerEvent: {}
+[4.226215] (-) TimerEvent: {}
+[4.327029] (-) TimerEvent: {}
+[4.427459] (-) TimerEvent: {}
+[4.527919] (-) TimerEvent: {}
+[4.628506] (-) TimerEvent: {}
+[4.678664] (px4_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[4.728663] (-) TimerEvent: {}
+[4.829081] (-) TimerEvent: {}
+[4.915236] (px4_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[4.929311] (-) TimerEvent: {}
+[4.952918] (px4_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[4.987486] (px4_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[4.987862] (px4_msgs) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[4.987996] (px4_msgs) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[5.029565] (-) TimerEvent: {}
+[5.069741] (px4_msgs) StdoutLine: {'line': b'-- Found ament_cmake_flake8: 0.12.8 (/opt/ros/humble/share/ament_cmake_flake8/cmake)\n'}
+[5.073229] (px4_msgs) StdoutLine: {'line': b'-- Found ament_cmake_pep257: 0.12.8 (/opt/ros/humble/share/ament_cmake_pep257/cmake)\n'}
+[5.129759] (-) TimerEvent: {}
+[5.202581] (px4_msgs) StdoutLine: {'line': b'-- Configuring done\n'}
+[5.229890] (-) TimerEvent: {}
+[5.330308] (-) TimerEvent: {}
+[5.430821] (-) TimerEvent: {}
+[5.531439] (-) TimerEvent: {}
+[5.631929] (-) TimerEvent: {}
+[5.732502] (-) TimerEvent: {}
+[5.832996] (-) TimerEvent: {}
+[5.858261] (px4_msgs) StdoutLine: {'line': b'-- Generating done\n'}
+[5.864323] (px4_msgs) StdoutLine: {'line': b'-- Build files have been written to: /workspaces/dev_env/src/drone_workspace/build/px4_msgs\n'}
+[5.897556] (px4_msgs) CommandEnded: {'returncode': 0}
+[5.901006] (px4_msgs) JobProgress: {'identifier': 'px4_msgs', 'progress': 'build'}
+[5.901786] (px4_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/workspaces/dev_env/src/drone_workspace/build/px4_msgs', '--', '-j20', '-l20'], 'cwd': '/workspaces/dev_env/src/drone_workspace/build/px4_msgs', 'env': OrderedDict([('HOSTNAME', 'docker-desktop'), ('GIT_ASKPASS', '/vscode/vscode-server/bin/linux-x64/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LIBGL_ALWAYS_SOFTWARE', '1'), ('LD_LIBRARY_PATH', '/workspaces/dev_env/src/drone_workspace/install/px4_msgs/lib:/home/ros/ws_sensor_combined/install/px4_ros_com/lib:/home/ros/ws_sensor_combined/install/px4_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/vscode/vscode-server/bin/linux-x64/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/bin/helpers/browser.sh'), ('AMENT_CPPCHECK_ALLOW_SLOW_VERSIONS', '1'), ('HOME', '/home/ros'), ('OLDPWD', '/workspaces/dev_env/src/drone_workspace/my_drone_ctrl/my_drone_ctrl'), ('TERM_PROGRAM_VERSION', '1.84.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-5ba4468a-17db-4f8d-adaa-7830ae3890e7.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/vscode/vscode-server/bin/linux-x64/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/vscode/vscode-server/bin/linux-x64/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/workspaces/dev_env/src/drone_workspace/install:/home/ros/ws_sensor_combined/install:/workspaces/dev_env/src/drone_workspace/my_drone_ctrl/my_drone_ctrl/install:/opt/ros/humble'), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-f06b0979-0939-4b78-8436-67b595599ce6.sock'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/vscode/vscode-server/bin/linux-x64/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-f06b0979-0939-4b78-8436-67b595599ce6.sock","/tmp/.X11-unix/X1","/home/ros/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-6d1ba16160.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-f06b0979-0939-4b78-8436-67b595599ce6.sock'), ('AMENT_PREFIX_PATH', '/workspaces/dev_env/src/drone_workspace/install/px4_msgs:/workspaces/dev_env/src/drone_workspace/install/my_drone_ctrl:/workspaces/dev_env/src/drone_workspace/my_drone_ctrl/my_drone_ctrl/install/my_drone_bringup:/home/ros/ws_sensor_combined/install/px4_ros_com:/home/ros/ws_sensor_combined/install/px4_msgs:/opt/ros/humble'), ('DEBIAN_FRONTEND', ''), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X1'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/workspaces/dev_env/src/drone_workspace/build/px4_msgs'), ('PYTHONPATH', '/workspaces/dev_env/src/drone_workspace/install/px4_msgs/local/lib/python3.10/dist-packages:/workspaces/dev_env/src/drone_workspace/install/my_drone_ctrl/lib/python3.10/site-packages:/home/ros/ws_sensor_combined/install/px4_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/workspaces/dev_env/src/drone_workspace/install/px4_msgs:/workspaces/dev_env/src/drone_workspace/my_drone_ctrl/my_drone_ctrl/install/my_drone_bringup:/home/ros/ws_sensor_combined/install/px4_ros_com:/home/ros/ws_sensor_combined/install/px4_msgs:/workspaces/dev_env/src/drone_workspace/install/my_drone_ctrl:/opt/ros/humble')]), 'shell': False}
+[5.933133] (-) TimerEvent: {}
+[6.033583] (-) TimerEvent: {}
+[6.134037] (-) TimerEvent: {}
+[6.244451] (-) TimerEvent: {}
+[6.345126] (-) TimerEvent: {}
+[6.422136] (px4_msgs) StderrLine: {'line': b"failed to create symbolic link '/workspaces/dev_env/src/drone_workspace/build/px4_msgs/ament_cmake_python/px4_msgs/px4_msgs' because existing path cannot be removed: Is a directory\n"}
+[6.422905] (px4_msgs) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/ament_cmake_python_symlink_px4_msgs.dir/build.make:70: CMakeFiles/ament_cmake_python_symlink_px4_msgs] Error 1\n'}
+[6.423216] (px4_msgs) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:421: CMakeFiles/ament_cmake_python_symlink_px4_msgs.dir/all] Error 2\n'}
+[6.423316] (px4_msgs) StderrLine: {'line': b'gmake[1]: *** Waiting for unfinished jobs....\n'}
+[6.445363] (-) TimerEvent: {}
+[6.446333] (px4_msgs) StdoutLine: {'line': b'[  0%] Built target px4_msgs__cpp\n'}
+[6.515971] (px4_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target px4_msgs__rosidl_generator_c\x1b[0m\n'}
+[6.545523] (-) TimerEvent: {}
+[6.607104] (px4_msgs) StdoutLine: {'line': b'[ 12%] Built target px4_msgs__rosidl_generator_c\n'}
+[6.608617] (px4_msgs) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[6.612739] (px4_msgs) CommandEnded: {'returncode': 2}
+[6.645709] (-) TimerEvent: {}
+[6.746192] (-) TimerEvent: {}
+[6.846790] (-) TimerEvent: {}
+[6.947243] (-) TimerEvent: {}
+[7.047648] (-) TimerEvent: {}
+[7.148082] (-) TimerEvent: {}
+[7.248454] (-) TimerEvent: {}
+[7.349114] (-) TimerEvent: {}
+[7.449519] (-) TimerEvent: {}
+[7.549944] (-) TimerEvent: {}
+[7.651259] (-) TimerEvent: {}
+[7.751632] (-) TimerEvent: {}
+[7.852126] (-) TimerEvent: {}
+[7.952619] (-) TimerEvent: {}
+[8.053218] (-) TimerEvent: {}
+[8.153583] (-) TimerEvent: {}
+[8.254023] (-) TimerEvent: {}
+[8.354574] (-) TimerEvent: {}
+[8.454954] (-) TimerEvent: {}
+[8.555494] (-) TimerEvent: {}
+[8.655870] (-) TimerEvent: {}
+[8.756353] (-) TimerEvent: {}
+[8.856722] (-) TimerEvent: {}
+[8.957408] (-) TimerEvent: {}
+[9.057765] (-) TimerEvent: {}
+[9.158209] (-) TimerEvent: {}
+[9.258598] (-) TimerEvent: {}
+[9.359350] (-) TimerEvent: {}
+[9.459814] (-) TimerEvent: {}
+[9.560215] (-) TimerEvent: {}
+[9.660556] (-) TimerEvent: {}
+[9.760917] (-) TimerEvent: {}
+[9.861319] (-) TimerEvent: {}
+[9.961922] (-) TimerEvent: {}
+[10.062332] (-) TimerEvent: {}
+[10.162846] (-) TimerEvent: {}
+[10.263448] (-) TimerEvent: {}
+[10.363971] (-) TimerEvent: {}
+[10.464672] (-) TimerEvent: {}
+[10.565194] (-) TimerEvent: {}
+[10.665853] (-) TimerEvent: {}
+[10.766497] (-) TimerEvent: {}
+[10.866859] (-) TimerEvent: {}
+[10.967269] (-) TimerEvent: {}
+[11.067874] (-) TimerEvent: {}
+[11.170866] (-) TimerEvent: {}
+[11.271226] (-) TimerEvent: {}
+[11.363750] (px4_msgs) JobEnded: {'identifier': 'px4_msgs', 'rc': 2}
+[11.371341] (-) TimerEvent: {}
+[11.374778] (-) EventReactorShutdown: {}

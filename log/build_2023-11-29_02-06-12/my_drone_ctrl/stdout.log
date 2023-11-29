@@ -1,0 +1,23 @@
+running develop
+running egg_info
+creating my_drone_ctrl.egg-info
+writing my_drone_ctrl.egg-info/PKG-INFO
+writing dependency_links to my_drone_ctrl.egg-info/dependency_links.txt
+writing entry points to my_drone_ctrl.egg-info/entry_points.txt
+writing requirements to my_drone_ctrl.egg-info/requires.txt
+writing top-level names to my_drone_ctrl.egg-info/top_level.txt
+writing manifest file 'my_drone_ctrl.egg-info/SOURCES.txt'
+reading manifest file 'my_drone_ctrl.egg-info/SOURCES.txt'
+writing manifest file 'my_drone_ctrl.egg-info/SOURCES.txt'
+running build_ext
+Creating /workspaces/dev_env/src/drone_workspace/install/my_drone_ctrl/lib/python3.10/site-packages/my-drone-ctrl.egg-link (link to .)
+Installing GPSNode script to /workspaces/dev_env/src/drone_workspace/install/my_drone_ctrl/lib/my_drone_ctrl
+
+Installed /workspaces/dev_env/src/drone_workspace/build/my_drone_ctrl
+running install_data
+creating /workspaces/dev_env/src/drone_workspace/install/my_drone_ctrl/share/ament_index
+creating /workspaces/dev_env/src/drone_workspace/install/my_drone_ctrl/share/ament_index/resource_index
+creating /workspaces/dev_env/src/drone_workspace/install/my_drone_ctrl/share/ament_index/resource_index/packages
+copying resource/my_drone_ctrl -> /workspaces/dev_env/src/drone_workspace/install/my_drone_ctrl/share/ament_index/resource_index/packages
+copying package.xml -> /workspaces/dev_env/src/drone_workspace/install/my_drone_ctrl/share/my_drone_ctrl
+creating /workspaces/dev_env/src/drone_workspace/install/my_drone_ctrl/share/my_drone_ctrl/launch

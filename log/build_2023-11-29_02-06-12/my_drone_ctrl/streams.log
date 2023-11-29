@@ -1,0 +1,51 @@
+[1.371s] Invoking command in '/workspaces/dev_env/src/drone_workspace/build/my_drone_ctrl': PYTHONPATH=/workspaces/dev_env/src/drone_workspace/build/my_drone_ctrl/prefix_override:/workspaces/dev_env/src/drone_workspace/install/my_drone_ctrl/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /workspaces/dev_env/src/drone_workspace/build/my_drone_ctrl/build --no-deps install_data
+[1.770s] running develop
+[1.770s] /usr/local/lib/python3.10/dist-packages/setuptools/command/develop.py:40: EasyInstallDeprecationWarning: easy_install command is deprecated.
+[1.770s] !!
+[1.770s] 
+[1.770s]         ********************************************************************************
+[1.770s]         Please avoid running ``setup.py`` and ``easy_install``.
+[1.770s]         Instead, use pypa/build, pypa/installer or other
+[1.770s]         standards-based tools.
+[1.771s] 
+[1.771s]         See https://github.com/pypa/setuptools/issues/917 for details.
+[1.771s]         ********************************************************************************
+[1.771s] 
+[1.771s] !!
+[1.771s]   easy_install.initialize_options(self)
+[1.812s] /usr/local/lib/python3.10/dist-packages/setuptools/_distutils/cmd.py:66: SetuptoolsDeprecationWarning: setup.py install is deprecated.
+[1.812s] !!
+[1.812s] 
+[1.812s]         ********************************************************************************
+[1.812s]         Please avoid running ``setup.py`` directly.
+[1.812s]         Instead, use pypa/build, pypa/installer or other
+[1.812s]         standards-based tools.
+[1.812s] 
+[1.812s]         See https://blog.ganssle.io/articles/2021/10/setup-py-deprecated.html for details.
+[1.812s]         ********************************************************************************
+[1.812s] 
+[1.813s] !!
+[1.813s]   self.initialize_options()
+[2.001s] running egg_info
+[2.001s] creating my_drone_ctrl.egg-info
+[2.017s] writing my_drone_ctrl.egg-info/PKG-INFO
+[2.017s] writing dependency_links to my_drone_ctrl.egg-info/dependency_links.txt
+[2.018s] writing entry points to my_drone_ctrl.egg-info/entry_points.txt
+[2.018s] writing requirements to my_drone_ctrl.egg-info/requires.txt
+[2.019s] writing top-level names to my_drone_ctrl.egg-info/top_level.txt
+[2.019s] writing manifest file 'my_drone_ctrl.egg-info/SOURCES.txt'
+[2.060s] reading manifest file 'my_drone_ctrl.egg-info/SOURCES.txt'
+[2.061s] writing manifest file 'my_drone_ctrl.egg-info/SOURCES.txt'
+[2.079s] running build_ext
+[2.080s] Creating /workspaces/dev_env/src/drone_workspace/install/my_drone_ctrl/lib/python3.10/site-packages/my-drone-ctrl.egg-link (link to .)
+[2.080s] Installing GPSNode script to /workspaces/dev_env/src/drone_workspace/install/my_drone_ctrl/lib/my_drone_ctrl
+[2.081s] 
+[2.081s] Installed /workspaces/dev_env/src/drone_workspace/build/my_drone_ctrl
+[2.081s] running install_data
+[2.082s] creating /workspaces/dev_env/src/drone_workspace/install/my_drone_ctrl/share/ament_index
+[2.082s] creating /workspaces/dev_env/src/drone_workspace/install/my_drone_ctrl/share/ament_index/resource_index
+[2.082s] creating /workspaces/dev_env/src/drone_workspace/install/my_drone_ctrl/share/ament_index/resource_index/packages
+[2.082s] copying resource/my_drone_ctrl -> /workspaces/dev_env/src/drone_workspace/install/my_drone_ctrl/share/ament_index/resource_index/packages
+[2.082s] copying package.xml -> /workspaces/dev_env/src/drone_workspace/install/my_drone_ctrl/share/my_drone_ctrl
+[2.083s] creating /workspaces/dev_env/src/drone_workspace/install/my_drone_ctrl/share/my_drone_ctrl/launch
+[2.130s] Invoked command in '/workspaces/dev_env/src/drone_workspace/build/my_drone_ctrl' returned '0': PYTHONPATH=/workspaces/dev_env/src/drone_workspace/build/my_drone_ctrl/prefix_override:/workspaces/dev_env/src/drone_workspace/install/my_drone_ctrl/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /workspaces/dev_env/src/drone_workspace/build/my_drone_ctrl/build --no-deps install_data

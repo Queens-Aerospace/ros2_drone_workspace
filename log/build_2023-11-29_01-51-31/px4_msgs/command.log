@@ -1,0 +1,1 @@
+Invoking command in '/workspaces/dev_env/src/drone_workspace/build/px4_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspaces/dev_env/src/drone_workspace/install/my_drone_ctrl:/opt/ros/humble /usr/bin/cmake --build /workspaces/dev_env/src/drone_workspace/build/px4_msgs -- -j20 -l20

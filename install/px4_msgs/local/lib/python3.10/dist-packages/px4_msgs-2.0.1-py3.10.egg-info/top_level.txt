@@ -1,1 +1,1 @@
-px4_msgs
+/workspaces/dev_env/src/drone_workspace/build/px4_msgs/ament_cmake_python/px4_msgs/px4_msgs.egg-info/top_level.txt

@@ -1,5 +1,1 @@
-uint64 timestamp		# time since system start (microseconds)
-
-int32 val
-
-# TOPICS orb_test orb_multitest
+/workspaces/dev_env/src/drone_workspace/px4_msgs/msg/OrbTest.msg

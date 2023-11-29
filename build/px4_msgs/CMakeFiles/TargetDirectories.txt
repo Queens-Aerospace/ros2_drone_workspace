@@ -9,7 +9,7 @@
 /workspaces/dev_env/src/drone_workspace/build/px4_msgs/CMakeFiles/px4_msgs__rosidl_typesupport_c.dir
 /workspaces/dev_env/src/drone_workspace/build/px4_msgs/CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir
 /workspaces/dev_env/src/drone_workspace/build/px4_msgs/CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir
-/workspaces/dev_env/src/drone_workspace/build/px4_msgs/CMakeFiles/ament_cmake_python_copy_px4_msgs.dir
+/workspaces/dev_env/src/drone_workspace/build/px4_msgs/CMakeFiles/ament_cmake_python_symlink_px4_msgs.dir
 /workspaces/dev_env/src/drone_workspace/build/px4_msgs/CMakeFiles/ament_cmake_python_build_px4_msgs_egg.dir
 /workspaces/dev_env/src/drone_workspace/build/px4_msgs/CMakeFiles/px4_msgs__rosidl_generator_py.dir
 /workspaces/dev_env/src/drone_workspace/build/px4_msgs/CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c__pyext.dir

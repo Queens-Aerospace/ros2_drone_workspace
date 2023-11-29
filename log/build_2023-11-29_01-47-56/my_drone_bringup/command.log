@@ -1,0 +1,2 @@
+Invoking command in '/workspaces/dev_env/src/drone_workspace/build/my_drone_bringup': /usr/bin/cmake /workspaces/dev_env/src/drone_workspace/my_drone_ctrl -DCMAKE_INSTALL_PREFIX=/workspaces/dev_env/src/drone_workspace/install/my_drone_bringup
+Invoked command in '/workspaces/dev_env/src/drone_workspace/build/my_drone_bringup' returned '1': /usr/bin/cmake /workspaces/dev_env/src/drone_workspace/my_drone_ctrl -DCMAKE_INSTALL_PREFIX=/workspaces/dev_env/src/drone_workspace/install/my_drone_bringup
